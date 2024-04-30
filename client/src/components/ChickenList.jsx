@@ -11,10 +11,10 @@ const FoodList = ({ foods }) => {
      
       <div className="flex-row justify-space-between my-4">
         {foods &&
-          foods.map((myfood) => (
-            <div key={myfood._id} className="col-12 col-xl-6">
+          foods.map((myfood, i) => (
+            <div key={i} className="col-12 col-xl-6">
               <div className="card mb-3">
-                <h4 className="card-header bg-dark text-light p-2 m-0">
+                <h4 className="card-header bg-dark text-light p-2 m-0" >
                   {myfood.name} <br />
                  
 
