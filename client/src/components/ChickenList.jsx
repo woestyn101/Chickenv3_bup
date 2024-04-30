@@ -8,7 +8,7 @@ const FoodList = ({ foods }) => {
 
   return (
     <div>
-      <h3 className="text-primary">{title}</h3>
+     
       <div className="flex-row justify-space-between my-4">
         {foods &&
           foods.map((myfood) => (
@@ -17,9 +17,21 @@ const FoodList = ({ foods }) => {
                 <h4 className="card-header bg-dark text-light p-2 m-0">
                   {myfood.name} <br />
                  
+
+                 
                 </h4>
 
                 
+              </div>
+              <div className="card-body">
+                <h6>Description</h6>
+                  {myfood.description} <br />
+                  <h6>Instructions</h6>
+                  {myfood.instructions} <br />
+                  <h6>Ingredients</h6>
+                  {myfood.ingredients} <br />
+                  <h6>Image</h6>
+                  {myfood.image} <br />
               </div>
             </div>
           ))}
